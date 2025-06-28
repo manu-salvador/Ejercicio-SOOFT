@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.53.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "name": "ejercicio-sooft",
+  "version": "1.0.0",
+  "description": "Ejercicio de SOOFT Technology",
+  "main": "index.js",
+  "dependencies": {
+    "playwright": "^1.53.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manu-salvador/Ejercicio-SOOFT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manu-salvador/Ejercicio-SOOFT/issues"
+  },
+  "homepage": "https://github.com/manu-salvador/Ejercicio-SOOFT#readme"
+}
