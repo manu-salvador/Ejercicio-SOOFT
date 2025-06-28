@@ -1,6 +1,6 @@
 import { Page } from "playwright";
 
-export class SearchResultsPage {
+export class SearchPage {
   readonly page: Page;
 
   constructor(page: Page) {
@@ -8,6 +8,8 @@ export class SearchResultsPage {
   }
 
   async hasResults(): Promise<boolean> {
-    return await this.page.locator('.ui-search-result').count() > 0;
+    await this.page.waitForSelector('.ui-search-layout__item, .ui-search-search-result__wrapper', { timeout: 10000 });
+    const results = await this.page.$$('.ui-search-layout__item');
+    return results.length > 0;
   }
 }
