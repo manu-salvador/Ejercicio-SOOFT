@@ -11,7 +11,7 @@ let homePage: HomePage;
 let searchPage: SearchPage;
 
 Given('que estoy en la pagina de Mercado Libre', async function () {
-  browser = await chromium.launch({ headless: false }); // cambiar por firefox.launch() para alternar
+  browser = await firefox.launch({ headless: false }); // cambiar por firefox.launch() para alternar
   page = await browser.newPage();
   homePage = new HomePage(page);
   searchPage = new SearchPage(page);
